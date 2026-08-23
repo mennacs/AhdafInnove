@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AHDAF helps children explore activities, reflect on what they enjoy, and discover new interests through safe, hands-on experiences."
+    />
+    <title>AHDAF | Explore. Experience. Discover.</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="#top" class="brand" aria-label="AHDAF home">
+          <span class="brand-mark" aria-label="AHDAF logo placeholder">
+            <img
+              src="assets/ahdaf.jpeg"
+              alt="AHDAF logo"
+              class="brand-logo"
+              onerror="this.style.display='none'; this.parentElement.classList.add('brand-placeholder');"
+            />
+            <span class="brand-text">AHDAF</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel">
+          <ul class="nav-links" role="list">
+            <li><a href="#top" data-i18n="nav.home">Home</a></li>
+            <li><a href="#explore" data-i18n="nav.explore">Explore</a></li>
+            <li><a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a></li>
+            <li><a href="#experiences" data-i18n="nav.experiences">Experiences</a></li>
+            <li><a href="#my-discovery" data-i18n="nav.myDiscovery">My Discovery</a></li>
+            <li><a href="#for-parents" data-i18n="nav.parents">For Parents</a></li>
+            <li><a href="#for-partners" data-i18n="nav.partners">For Partners</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <div class="locale-switch" aria-label="Language switch">
+              <button type="button" class="lang-btn active" data-lang="en">EN</button>
+              <button type="button" class="lang-btn" data-lang="ar">AR</button>
+            </div>
+
+            <button type="button" class="theme-toggle" aria-label="Switch theme">
+              <span class="theme-icon" aria-hidden="true">☀️</span>
+              <span class="theme-label" data-i18n="theme.light">Light</span>
+            </button>
+
+            <a href="#explore" class="button button-primary nav-cta" data-i18n="nav.startExploring">Start Exploring</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow" data-i18n="hero.eyebrow">EXPLORE • EXPERIENCE • DISCOVER</span>
+            <h1 data-i18n="hero.title">Discover What Excites You.</h1>
+            <p data-i18n="hero.text">
+              Try new experiences, explore different fields, and discover what you enjoy, what you're good at, and what you want to explore further.
+            </p>
+            <div class="hero-actions">
+              <a href="#explore" class="button button-primary" data-i18n="hero.primaryCta">Start Exploring</a>
+              <a href="#how-it-works" class="button button-secondary" data-i18n="hero.secondaryCta">How It Works</a>
+            </div>
+            <ul class="hero-highlights" aria-label="AHDAF benefits">
+              <li data-i18n="hero.benefit1">Try new activities</li>
+              <li data-i18n="hero.benefit2">Reflect on what you enjoy</li>
+              <li data-i18n="hero.benefit3">Explore at your own pace</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="AHDAF exploration illustration">
+            <div class="visual-card card-one">
+              <span class="visual-icon">🔎</span>
+              <span data-i18n="hero.visualDiscover">Discover</span>
+            </div>
+            <div class="visual-card card-two">
+              <span class="visual-icon">🎨</span>
+              <span data-i18n="hero.visualCreate">Create</span>
+            </div>
+            <div class="visual-card card-three">
+              <span class="visual-icon">🚀</span>
+              <span data-i18n="hero.visualGrow">Grow</span>
+            </div>
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="orbit orbit-three"></div>
+            <div class="pulse-badge">
+              <span data-i18n="hero.visualBadge">Exposure → Experience → Discovery</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem section alt-section" id="problem">
+        <div class="container narrow">
+          <div class="section-heading center">
+            <span class="eyebrow accent" data-i18n="problem.eyebrow">Why Exploration Matters</span>
+            <h2 data-i18n="problem.title">Why Exploration Matters</h2>
+          </div>
+          <p class="lead" data-i18n="problem.text">
+            Many children have limited exposure to different activities and fields. Without opportunities to try new things, it can be hard to notice what sparks curiosity, what feels meaningful, or what they want to explore next.
+          </p>
+          <div class="feature-list three-col">
+            <div class="feature-item">
+              <div class="feature-icon">✨</div>
+              <h3 data-i18n="problem.item1Title">What they enjoy</h3>
+              <p data-i18n="problem.item1Text">Children may not know what brings them joy until they try it.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🧠</div>
+              <h3 data-i18n="problem.item2Title">What interests them</h3>
+              <p data-i18n="problem.item2Text">Exposure helps children notice patterns in what they care about.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🌱</div>
+              <h3 data-i18n="problem.item3Title">What they want to explore</h3>
+              <p data-i18n="problem.item3Text">The next step becomes clearer when they have room to experiment.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="journey section" id="how-it-works">
+        <div class="container">
+          <div class="section-heading center">
+            <span class="eyebrow accent" data-i18n="journey.eyebrow">How AHDAF Works</span>
+            <h2 data-i18n="journey.title">How AHDAF Works</h2>
+          </div>
+          <div class="journey-grid">
+            <article class="journey-card">
+              <span class="journey-number">01</span>
+              <h3 data-i18n="journey.step1Title">Explore</h3>
+              <p data-i18n="journey.step1Text">Discover activities and fields you may have never tried before.</p>
+            </article>
+            <article class="journey-card">
+              <span class="journey-number">02</span>
+              <h3 data-i18n="journey.step2Title">Learn</h3>
+              <p data-i18n="journey.step2Text">Get a simple introduction so you understand what you're about to try.</p>
+            </article>
+            <article class="journey-card">
+              <span class="journey-number">03</span>
+              <h3 data-i18n="journey.step3Title">Experience</h3>
+              <p data-i18n="journey.step3Text">Take part in a practical, age-appropriate activity.</p>
+            </article>
+            <article class="journey-card">
+              <span class="journey-number">04</span>
+              <h3 data-i18n="journey.step4Title">Reflect</h3>
+              <p data-i18n="journey.step4Text">Think about what you enjoyed, what challenged you, and how you felt.</p>
+            </article>
+            <article class="journey-card">
+              <span class="journey-number">05</span>
+              <h3 data-i18n="journey.step5Title">Discover</h3>
+              <p data-i18n="journey.step5Text">Notice patterns in your interests and decide what you want to explore next.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories section alt-section" id="explore">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow accent" data-i18n="categories.eyebrow">Explore Different Worlds</span>
+            <h2 data-i18n="categories.title">What Are You Curious About?</h2>
+          </div>
+          <div class="filter-row" aria-label="Category filters">
+            <button type="button" class="filter-chip active" data-filter="all" data-i18n="categories.filterAll">All</button>
+            <button type="button" class="filter-chip" data-filter="technology">Technology</button>
+            <button type="button" class="filter-chip" data-filter="art">Art &amp; Design</button>
+            <button type="button" class="filter-chip" data-filter="science">Science</button>
+            <button type="button" class="filter-chip" data-filter="music">Music</button>
+            <button type="button" class="filter-chip" data-filter="sports">Sports</button>
+            <button type="button" class="filter-chip" data-filter="making">Engineering &amp; Making</button>
+            <button type="button" class="filter-chip" data-filter="media">Media</button>
+            <button type="button" class="filter-chip" data-filter="nature">Nature</button>
+            <button type="button" class="filter-chip" data-filter="people">People &amp; Psychology</button>
+            <button type="button" class="filter-chip" data-filter="food">Food &amp; Creativity</button>
+          </div>
+          <div id="categoryGrid" class="category-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="experience-section section" id="experiences">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow accent" data-i18n="experiences.eyebrow">Experiences</span>
+            <h2 data-i18n="experiences.title">Hands-on Experiences</h2>
+          </div>
+          <div id="experienceGrid" class="experience-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="surprise section accent-strip" id="surprise">
+        <div class="container surprise-wrap">
+          <div>
+            <span class="eyebrow accent-light" data-i18n="surprise.eyebrow">Try Something Unexpected</span>
+            <h2 data-i18n="surprise.title">Try Something Unexpected</h2>
+            <p data-i18n="surprise.text">Not sure where to start? Let curiosity choose your next experience.</p>
+          </div>
+          <button type="button" id="surpriseMeBtn" class="button button-primary button-large" data-i18n="surprise.button">Surprise Me</button>
+        </div>
+      </section>
+
+      <section class="my-discovery section" id="my-discovery">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow accent" data-i18n="discovery.eyebrow">My Discovery</span>
+            <h2 data-i18n="discovery.title">My Discovery</h2>
+          </div>
+          <div id="discoverySummary" class="discovery-summary"></div>
+        </div>
+      </section>
+
+      <section class="parents section alt-section" id="for-parents">
+        <div class="container split-layout">
+          <div>
+            <span class="eyebrow accent" data-i18n="parents.eyebrow">For Parents</span>
+            <h2 data-i18n="parents.title">Support their journey, without choosing it for them.</h2>
+            <p data-i18n="parents.text">AHDAF is not designed to decide a child's future. Instead, it helps children explore unfamiliar activities, gain meaningful exposure, and discover what they enjoy through real experiences.</p>
+            <ul class="check-list">
+              <li data-i18n="parents.item1">Explore without pressure</li>
+              <li data-i18n="parents.item2">Notice interests and strengths</li>
+              <li data-i18n="parents.item3">Support safe opportunities</li>
+              <li data-i18n="parents.item4">Encourage curiosity, not conclusions</li>
+            </ul>
+          </div>
+          <div class="info-panel">
+            <div class="mini-stat">
+              <strong>6+</strong>
+              <span data-i18n="parents.stat1">Ways to explore</span>
+            </div>
+            <div class="mini-stat">
+              <strong>1</strong>
+              <span data-i18n="parents.stat2">Gentle reflection</span>
+            </div>
+            <div class="mini-stat">
+              <strong>∞</strong>
+              <span data-i18n="parents.stat3">Possibilities</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="safety section" id="safety">
+        <div class="container narrow">
+          <div class="section-heading center">
+            <span class="eyebrow accent" data-i18n="safety.eyebrow">Safety &amp; Trust</span>
+            <h2 data-i18n="safety.title">Safety &amp; Trust</h2>
+          </div>
+          <div class="feature-list three-col">
+            <div class="feature-item">
+              <div class="feature-icon">🛡️</div>
+              <h3 data-i18n="safety.item1Title">Age-appropriate guidance</h3>
+              <p data-i18n="safety.item1Text">Each experience is designed to be understandable, safe, and suitable for young learners.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🤝</div>
+              <h3 data-i18n="safety.item2Title">Clear information</h3>
+              <p data-i18n="safety.item2Text">Children and parents can review what they will do, what they need, and what to expect.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">✅</div>
+              <h3 data-i18n="safety.item3Title">Trusted environments</h3>
+              <p data-i18n="safety.item3Text">Working with safe, supportive, and age-appropriate activity providers is important.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners section alt-section" id="for-partners">
+        <div class="container split-layout reverse">
+          <div class="info-panel large-panel">
+            <div class="mini-stat">
+              <strong>🎓</strong>
+              <span data-i18n="partners.stat1">Workshops</span>
+            </div>
+            <div class="mini-stat">
+              <strong>🧪</strong>
+              <span data-i18n="partners.stat2">Guided activities</span>
+            </div>
+            <div class="mini-stat">
+              <strong>🌍</strong>
+              <span data-i18n="partners.stat3">Real-world exposure</span>
+            </div>
+          </div>
+          <div>
+            <span class="eyebrow accent" data-i18n="partners.eyebrow">For Partners</span>
+            <h2 data-i18n="partners.title">Help the next generation discover what they love.</h2>
+            <p data-i18n="partners.text">Partners can provide meaningful, age-appropriate opportunities for children to explore through workshops, short experiences, guided activities, and practical sessions.</p>
+            <a href="#contact" class="button button-primary" data-i18n="partners.button">Become a Partner</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container narrow">
+          <div class="section-heading center">
+            <span class="eyebrow accent" data-i18n="about.eyebrow">About AHDAF</span>
+            <h2 data-i18n="about.title">About AHDAF</h2>
+          </div>
+          <p data-i18n="about.text1">AHDAF exists to give children more meaningful opportunities to explore unfamiliar activities, notice what they enjoy, and learn through experience rather than pressure.</p>
+          <p data-i18n="about.text2">Many children do not have enough exposure to different fields, which can make it difficult to understand their interests. AHDAF supports exploration that is gradual, safe, and reflective.</p>
+        </div>
+      </section>
+
+      <section class="impact section alt-section">
+        <div class="container">
+          <div class="section-heading center">
+            <span class="eyebrow accent" data-i18n="impact.eyebrow">Impact</span>
+            <h2 data-i18n="impact.title">Prototype Impact</h2>
+          </div>
+          <div class="impact-grid">
+            <div class="impact-card">
+              <strong>100+</strong>
+              <span data-i18n="impact.metric1">Experiences</span>
+            </div>
+            <div class="impact-card">
+              <strong>20+</strong>
+              <span data-i18n="impact.metric2">Exploration Areas</span>
+            </div>
+            <div class="impact-card">
+              <strong>500+</strong>
+              <span data-i18n="impact.metric3">Young Explorers</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stories section">
+        <div class="container">
+          <div class="section-heading center">
+            <span class="eyebrow accent" data-i18n="stories.eyebrow">Stories</span>
+            <h2 data-i18n="stories.title">Stories &amp; Voices</h2>
+          </div>
+          <div class="story-grid">
+            <article class="story-card">
+              <p data-i18n="stories.quote1">I never thought I would enjoy designing until I tried it.</p>
+              <span data-i18n="stories.author1">— Young Explorer</span>
+            </article>
+            <article class="story-card">
+              <p data-i18n="stories.quote2">Instead of asking my child what they want to be, we started asking what they wanted to try.</p>
+              <span data-i18n="stories.author2">— Parent</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta section">
+        <div class="container final-cta-box">
+          <div>
+            <span class="eyebrow accent" data-i18n="final.eyebrow">Start Your Journey</span>
+            <h2 data-i18n="final.title">Your journey starts with trying something new.</h2>
+            <p data-i18n="final.text">Your next discovery could be something you never expected.</p>
+          </div>
+          <div class="hero-actions inline-actions">
+            <a href="#explore" class="button button-primary" data-i18n="final.primaryCta">Start Exploring</a>
+            <a href="#experiences" class="button button-secondary" data-i18n="final.secondaryCta">Explore Experiences</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <span class="brand-mark footer-logo" aria-label="AHDAF logo placeholder">
+            <img
+              src="assets/logo.png"
+              alt="AHDAF logo"
+              class="brand-logo"
+              onerror="this.style.display='none'; this.parentElement.classList.add('brand-placeholder');"
+            />
+            <span class="brand-text">AHDAF</span>
+          </span>
+          <p class="tagline" data-i18n="footer.tagline">ارسم طريق نجاحك بنفسك</p>
+          <p data-i18n="footer.description">A curious, hands-on platform that helps children explore interests through safe, meaningful experiences.</p>
+        </div>
+
+        <div>
+          <h3 data-i18n="footer.navTitle">Explore</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="#top" data-i18n="nav.home">Home</a></li>
+            <li><a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a></li>
+            <li><a href="#my-discovery" data-i18n="nav.myDiscovery">My Discovery</a></li>
+            <li><a href="#for-parents" data-i18n="nav.parents">For Parents</a></li>
+            <li><a href="#for-partners" data-i18n="nav.partners">For Partners</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 data-i18n="footer.legalTitle">Safety</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="#safety" data-i18n="footer.safety">Safety</a></li>
+            <li><a href="#contact" data-i18n="footer.contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 data-i18n="footer.socialTitle">Follow</h3>
+          <ul class="social-list" role="list">
+            <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+            <li><a href="#" aria-label="YouTube">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">© 2026 AHDAF. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div id="experienceModal" class="modal hidden" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal="true"></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button type="button" class="modal-close" aria-label="Close activity details">×</button>
+        <div class="modal-content">
+          <div class="modal-visual" id="modalVisual">✨</div>
+          <div class="modal-header">
+            <span id="modalCategory" class="pill"></span>
+            <h3 id="modalTitle"></h3>
+          </div>
+          <div class="detail-grid">
+            <div><strong data-i18n="modal.age">Age suitability</strong><span id="modalAge"></span></div>
+            <div><strong data-i18n="modal.duration">Estimated duration</strong><span id="modalDuration"></span></div>
+          </div>
+          <div class="detail-block">
+            <h4 data-i18n="modal.whatYouDo">What you'll do</h4>
+            <ul id="modalDo"></ul>
+          </div>
+          <div class="detail-block">
+            <h4 data-i18n="modal.whatYouNeed">What you'll need</h4>
+            <ul id="modalNeed"></ul>
+          </div>
+          <div class="detail-block">
+            <h4 data-i18n="modal.whatYouDiscover">What you'll discover</h4>
+            <ul id="modalDiscover"></ul>
+          </div>
+          <div class="detail-block">
+            <h4 data-i18n="modal.safetyNotes">Safety notes</h4>
+            <ul id="modalSafety"></ul>
+          </div>
+          <div class="modal-actions">
+            <button type="button" class="button button-primary" id="startExperienceBtn" data-i18n="modal.tryActivity">Try This Activity</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="activityFlowModal" class="modal hidden" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal="true"></div>
+      <div class="modal-panel activity-panel" role="dialog" aria-modal="true" aria-labelledby="flowTitle">
+        <button type="button" class="modal-close" aria-label="Close activity flow">×</button>
+        <div class="flow-header">
+          <div>
+            <span id="flowCategory" class="pill"></span>
+            <h3 id="flowTitle"></h3>
+          </div>
+          <div class="progress-wrap">
+            <div class="progress-bar">
+              <span id="flowProgressBar"></span>
+            </div>
+            <span id="flowProgressText" class="progress-text">1 / 3</span>
+          </div>
+        </div>
+        <div class="flow-body">
+          <div id="flowStepVisual" class="flow-step-visual">🎯</div>
+          <h4 id="flowStepTitle"></h4>
+          <p id="flowStepText"></p>
+        </div>
+        <div class="modal-actions flow-actions">
+          <button type="button" class="button button-secondary" id="backStepBtn" data-i18n="flow.back">Back</button>
+          <button type="button" class="button button-primary" id="nextStepBtn" data-i18n="flow.next">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="reflectionModal" class="modal hidden" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal="true"></div>
+      <div class="modal-panel reflection-panel" role="dialog" aria-modal="true" aria-labelledby="reflectionTitle">
+        <button type="button" class="modal-close" aria-label="Close reflection">×</button>
+        <div class="reflection-content">
+          <h3 id="reflectionTitle" data-i18n="reflection.title">Reflection</h3>
+          <form id="reflectionForm">
+            <div class="reflection-group">
+              <label data-i18n="reflection.question1">Did you enjoy this?</label>
+              <div class="emoji-options">
+                <label><input type="radio" name="enjoyment" value="loved" required /> <span>😊</span> <span data-i18n="reflection.optionLoved">Loved it</span></label>
+                <label><input type="radio" name="enjoyment" value="enjoyed" /> <span>🙂</span> <span data-i18n="reflection.optionEnjoyed">Enjoyed it</span></label>
+                <label><input type="radio" name="enjoyment" value="okay" /> <span>😐</span> <span data-i18n="reflection.optionOkay">It was okay</span></label>
+                <label><input type="radio" name="enjoyment" value="not-enjoy" /> <span>🙁</span> <span data-i18n="reflection.optionNot">Didn't enjoy it</span></label>
+              </div>
+            </div>
+
+            <div class="reflection-group">
+              <label for="likedMost" data-i18n="reflection.question2">What part did you like most?</label>
+              <textarea id="likedMost" name="likedMost" rows="3" placeholder="I liked..." data-i18n-placeholder="reflection.placeholderMost"></textarea>
+            </div>
+
+            <div class="reflection-group">
+              <label for="difficulty" data-i18n="reflection.question3">What was difficult?</label>
+              <textarea id="difficulty" name="difficulty" rows="3" placeholder="It was challenging when..." data-i18n-placeholder="reflection.placeholderDifficult"></textarea>
+            </div>
+
+            <div class="reflection-group">
+              <label data-i18n="reflection.question4">Would you try something like this again?</label>
+              <div class="inline-options">
+                <label><input type="radio" name="tryAgain" value="yes" required /> <span data-i18n="reflection.yes">Yes</span></label>
+                <label><input type="radio" name="tryAgain" value="maybe" /> <span data-i18n="reflection.maybe">Maybe</span></label>
+                <label><input type="radio" name="tryAgain" value="no" /> <span data-i18n="reflection.no">No</span></label>
+              </div>
+            </div>
+
+            <div class="modal-actions">
+              <button type="submit" class="button button-primary" data-i18n="reflection.submit">Save Reflection</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // placeholder to ensure the page has valid HTML before external JS loads
+    </script>
+  </body>
+</html>
